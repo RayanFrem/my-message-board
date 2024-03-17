@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% messages.forEach(function(message) { %>
+        <li>
+          <strong><%= message.user %></strong>: <%= message.text %> (added on <%= message.added.toLocaleString() %>)
+        </li>
+      <% }); %>
+    </ul>
+    
+  </body>
+</html>
